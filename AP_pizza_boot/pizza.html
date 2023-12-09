@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Main_Pizza_Planet</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo"><img src="images/logo.png"></div>
+        <nav>
+            <a href="#menu">Menus</a>
+            <a href="#events">Événements</a>
+            <a href="#shop">Boutique</a>
+            <a href="html/commande.html" target="_blank">Commander en ligne</a>
+            <a href="#reservations">Réservations</a>
+        </nav>
+    </header>
+    <div class="image_fond">
+        <img src="images/back.jpg" alt="Image d'arrière-plan">
+    </div>
+
+    <form id="commande-pizza">
+        <label for="taille">Taille:</label>
+        <select id="taille" name="taille">
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+        <br>
+
+        <label id="supplements">Suppléments:</label>
+        <input type="checkbox" id="pepperoni" name="supplements" value="Pepperoni">Pepperoni
+        <input type="checkbox" id="fromage" name="supplements" value="Fromage">Fromage
+        <input type="checkbox" id="oeufs" name="supplements" value="Oeufs">Oeufs
+        <br>
+
+        <label for="pate">Pâte:</label>
+        <select id="pate" name="pate">
+            <option value="fine">Fine</option>
+            <option value="fourree">Fourrée</option>
+        </select>
+        <br>
+
+        <label for="type-pizza">Type de Pizza:</label>
+        <input type="text" id="type-pizza" name="type-pizza">
+        <br>
+
+        <label for="paiement">Moyen de Paiement:</label>
+        <select id="paiement" name="paiement">
+            <option value="carte">Carte</option>
+            <option value="especes">Espèces</option>
+        </select>
+        <br>
+
+        <label for="livraison">Livraison:</label>
+        <input type="text" id="livraison" name="livraison">
+        <br>
+
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom">
+        <br>
+
+        <label for="adresse">Adresse:</label>
+        <input type="text" id="adresse" name="adresse">
+        <br>
+
+        <label for="abonnement">Numéro d'Abonné:</label>
+        <input type="text" id="abonnement" name="abonnement">
+        <br>
+
+        <input type="submit" value="Commander">
+        <br>
+    </form>
+
+
+<footer class="footer">
+    &copy; 2023 Pizza Planet
+</footer>
+</body>
+</html>
